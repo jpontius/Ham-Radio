@@ -1,0 +1,493 @@
+\2
+   OPEN FILE
+
+   This menu item allows the programmer to open existing 
+   VX-2000 configuration files.
+
+   <Path>      Use the mouse or press <ALT>-P to select
+		 the <Path> window.  Specify the directory
+		 path from which you wish to retrieve the
+		 file.  The default path is to the same
+		 directory in which the programming
+		 software is installed.
+
+   <Name>      Use the mouse or press <ALT>-N to select
+		 the <Name> window.  Provide a search
+		 pattern using wildcards <*> to obtain a
+		 set of files you wish to select.  The
+		 default search string is "*.V2K".
+
+		 Optionally, you can enter the exact file
+		 name you wish to open and press <ENTER>
+		 to open the file.
+
+   <Files - #> Use the mouse or press <ALT>-F to select
+		 the <Files> window.  This window lists all
+		 subdirectories (indicated by a square
+		 prefix) and files under the directory path
+		 which match the search pattern.  The #
+		 indicates the number of files that match
+		 the search string.
+
+		 Use the Up/Down keys to select the
+		 subdirectory/file you wish to open, and
+		 press <ENTER>.  If you wish to cancel
+		 opening the file, press <ESC>.
+
+\3
+   SAVE FILE
+
+   This menu item allows the programmer to save the 
+   configuration file information displayed on screen.
+
+   <Path>      Use the mouse or press <ALT>-P to select
+		 the <Path> window.  Specify the directory
+		 path to which you wish to save the
+		 file.
+
+   <Files - #> Use the mouse or press <ALT>-F to select
+		 the <Files> window.  This window lists all
+		 subdirectories (indicated by a square
+		 prefix) and files under the directory path
+		 which match the search pattern.  Use the
+		 Up/Down keys to select the subdirectory/
+		 file you wish to save the configuration
+		 in, and press <ENTER>.  Press <ESC> to
+		 cancel.
+
+   <Name>      Use the mouse or press <ALT>-N to select
+		 the <Name> window.  Use the Delete key to
+		 remove the "*", then enter the file name
+		 you wish to save the configuration to.  We
+		 recommend that you retain the ".v10" file
+		 name extension to facilitate easier file
+		 retrieval later.  Press <ENTER> to save the
+		 file.  Press <ESC> to cancel.
+\4
+   PRINT
+
+   Choosing this submenu item prints a hard copy of the
+   configuration data file presently displayed on screen.
+
+   Make sure that the printer port is set correctly by
+   specifying the correct port in the CONFIGURE submenu.
+
+\5
+   CONFIGURE
+
+   Color/monochrome display can be chosen in this
+   submenu.  Communication ports to interface the radio,
+   and printer ports to print configuration data can
+   also be set.  Make changes to these items as needed.
+   Note that changes are NOT saved when the program is
+   terminated.
+
+   NOTE: MAKE SURE TO SELECT THE CORRECT COMMUNICATIONS
+	 PORT TO ENSURE PROPER OPERATION.  THE PROGRAM
+	 WILL LOCK-UP IF THEIR IS A CONFLICT BETWEEN THE
+	 MOUSE PORT AND VPL-1 PORT.
+
+\6
+   EXIT
+
+   This command terminates the program.  Make sure to
+   save any necessary configuration data prior to
+   exiting the program.
+
+\7
+   HARDWARE PARAMETERS
+
+   These parameters are related to the hardware of the
+   VX-2000 and should be handled with care.  Parameters 
+   to set the operating frequency band, IF frequency,
+   channel spacing, squelch time, PDO control time and
+   memory channels.  Most of these items will not be
+   accessible for editing.
+
+\8
+   COMMON PARAMETERS
+
+   These parameters set the operation of radio-wide
+   items.
+   
+\9
+   SCAN PARAMETERS
+
+   These parameters are used to configure the scan
+   setting of the radio unit.
+
+\10
+   MARKETING
+
+   The Serial Number is read-only.
+
+\17
+   UPLOAD
+
+   Used to read information from the VX-2000 radio into
+   the computer.  Existing data on screen will be
+   overwritten with the data from the radio unless
+   properly saved.
+
+   NOTE: MAKE SURE TO SELECT THE CORRECT COMMUNICATIONS
+	 PORT TO ENSURE PROPER OPERATION.  THE PROGRAM
+	 WILL LOCK-UP IF THEIR IS A CONFLICT BETWEEN THE
+	 MOUSE PORT AND VPL-1 PORT.
+
+\18
+   DOWNLOAD
+
+   Used to write configuration data from the computer to
+   the connected VX-2000 radio.  Data will be verified
+   for integrity by the program before downloading is
+   initiated.
+   
+   NOTE: MAKE SURE TO SELECT THE CORRECT COMMUNICATIONS
+	 PORT TO ENSURE PROPER OPERATION.  THE PROGRAM
+	 WILL LOCK-UP IF THEIR IS A CONFLICT BETWEEN THE
+	 MOUSE PORT AND VPL-1 PORT.
+
+\50
+   FREQ BAND
+
+   Displays the frequency band of the radio, VHF or UHF.
+   Default is VHF.  This will change to the correct band
+   automatically when the radio is read (uploaded) into
+   the computer.
+
+\51
+   1ST IF
+
+   Do not alter this setting after the frequency band
+   selection has automatically set the value, unless 
+   you have performed special modifications to the 
+   radio.
+
+\52
+   LOCAL OFFSET
+
+   Do not alter this setting after the frequency band
+   selection has automatically set the value unless you
+   are performing special modifications to the radio.
+
+   Change this setting to eliminate image problems in
+   some service areas.  Radio will have to be retuned
+   after modification.  This information is used in
+   conjunction with IF, REF OSC FREQ and channel
+   information to compute divide-by numbers.
+
+\53
+   CHAN SPACING
+
+   Minimum channel step size.  The software will round-
+   off incorrect entries to the nearest valid frequency.
+
+   This value does NOT indicate the radio's "wide" (25
+   kHz) or "narrow" (12.5 kHz) band hardware status
+   (receiver bandwidth filter and TX modulation
+   alignment).
+
+\54
+   SQUELCH TIMER
+
+   This will specify the amount of time that radio's
+   squelch circuit will be needed to react when carrier
+   is present.
+
+\55
+   PDO CONTROL TIMER
+
+   This will specify the amount of time that is required
+   for radio's PDO control.
+
+\56
+   MEMORY CHANNELS
+
+   This will specify the number of channels for the radio.
+
+\60
+   DEFAULT SPLIT
+
+   This is useful if you are going to program many 
+   channels with a fixed repeater offset for the 
+   transmit frequency. You should enter the amount
+   of shift from the receive frequency that will be 
+   applied to the transmit frequency. For example, 
+   for most UHF repeaters you will enter 5 MHz. When
+   you enter the receive frequency, the transmit
+   frequency will be entered with the correct amount
+   of offset already applied.  For negative offsets,
+   enter the minus sign before the numbers.
+   Default is 0.0.
+
+\61
+   HOME CHANNEL
+   
+   For transmissions after scanning stops: select whether
+   operation shifts to Piority Ch 1 or to the channel
+   selected when scanning started. Talk Back must be
+   disabled to allow Home Channel selection.
+
+\62
+   OFF HOOK
+
+   Enable/disable squelch override via the microphone
+   hanger (when the microphone is removed from the hanger).
+
+\63
+   MONITOR
+   
+   Enable/disable squelch override via the MON button.
+
+\64
+   TX TIME OUT
+ 
+   Transmitter Time-Out Timer enabled (to limit length
+   of transmissions, 0.5 to 7.5 minutes) or disabled.
+
+\65
+   TIME OUT RESUME
+   
+   Minimum time to wait (0, 6, 20 or 60 sec) after Tx
+   Time-Out before transmitter can be reactivated.
+
+\66
+   TX CARRIER DELAY
+   
+   When enable, releasing the PTT switch will leave the
+   transmitter active (without modulation) for an extra
+   400ms, eliminating the squelch tail at the receiving
+   end.
+
+\67
+   A KEY FUNCTION
+   
+   Select the function of the auxillary "A" button on the
+   front panel. Choices are:
+
+	Talk Around: activate simplex to bypass repeater(s).
+	Power Hi/Low: let user has the selection of High or
+     	              Low power transmission.
+        Call: blink LED when call received while unattended.
+	Accessory: user-defined function.
+
+\68
+   2 TONE GROUP
+
+   Select which tone group will be used for 2-tone editting.
+   Choices are
+
+	Group 1,2,3
+	Group 4,5,6.
+
+\100
+   SCAN RESUME TIME
+
+   The "5s timer" selection causes scanning to resume
+   after a 5-second pause. The "carrier" selection
+   causes scanning to resume after squelch closes.
+
+\101
+   PRIORITY SCAN
+
+   Enable to allow checking of the Priority channel
+   during scanning. Disable to inhibit radio to check
+   Priority channel during scanning.  
+
+\102
+   PRIORITY SPEED
+
+   Fast checks the priority channel more often, slow
+   does less often.
+
+\103
+   TALK BACK
+
+   Enable to allow transmission on channel where scan stops.
+   Disable permits transmission only on Home Channel when
+   scan stops.
+ 
+
+\300
+   CH#
+
+   Edit Channel Number for Display on the radio. The Space
+   Bar or keys 0 - 9 can be pressed to enter either a
+   blank and a number, two numbers (up to 99), or two
+   blanks. Press Enter to accept the displayed digit(s).
+
+\301
+   PRIORITY
+
+   For 40-channel radio version, user can select up to
+   2 priorities for scanning. Use SPACE bar or right
+   mouse button to change setting.
+   
+\302
+   WIDE/NARROW
+
+   Press SPACE bar or right mouse button to select either
+   the Wide or Narrow. In Wide mode, this channel will
+   operate with 25 KHz parameters. In Narrow mode, this
+   channel will operate with 12.5 KHz parameters.
+   
+\303
+   RECEIVE FREQUENCY
+
+   Enter the receive frequency, which should be a 
+   multiple of the Spacing shown at the top of the
+   screen.  If an incorrect entry is made, the software
+   will round off the entry to the nearest valid
+   frequency.  In this column you can directly enter
+   the entire receive frequency, or press ENTER and
+   use the arrow keys to select any digit in the filed
+   to edit.  Press ENTER again to accept the new 
+   frequency.  The software automatically writes this
+   frequency (or a programmed offset of this frequency)
+   into the Transmit Frequency column.
+
+   To lock or unlock a channel, bring the cursor to this
+   column and press the SPACE bar.  Channel lines
+   displayed in blue are unlocked and active, channel
+   lines displayed in gray are locked and inactive.
+   Data for locked channels will be programmed into the
+   radio, but the radio will act as if they are not
+   present.  A locked channel cannot be edited by the
+   software.  Channel 001 can never be locked.
+
+\304
+   TRANSMIT FREQUENCY
+
+   Enter the transmit frequency, which should be a 
+   multiple of the Spacing shown at the top of the
+   screen.  If an incorrect entry is made, the software
+   will round off the entry to the nearest valid
+   frequency.  In this column you can directly enter
+   the entire receive frequency, or press ENTER and
+   use the arrow keys to select any digit in the filed
+   to edit.  Press ENTER again to accept the new 
+   frequency.  
+
+   This entry may be programmed to shift automatically
+   to any offset of the receive frequency.  The offset
+   (Default Split) is programmed in the Common menu.
+   When offset is programmed, the software auto-
+   matically writes the TX frequency with the desired
+   offset immediately after the RX frequency is entered.
+
+   The transmitter can be inhibited on any channel by
+   bringing the cursor to this column and pressing the
+   SPACE bar.  When TX inhibit is on, the frequency
+   numbers are replaced with dashed lines.
+
+\305
+   SUB AUDIO TYPE
+
+   Use the SPACE bar to select between none (carrier
+   squelch, dashed lines are shown), CTCSS, or DCS.
+
+\306
+   DECODE
+
+   Select the CTCSS tone or DCS code to be decoded
+   (received) on this channel.  This can be done by
+   pressing the SPACE bar, then scrolling the list of 
+   tones (CTCSS) or codes (DCS) with the arrow keys.
+   Note that there are 8 non-standard CTCSS tones
+   available after 250.3 Hz.  When you have selected
+   the correct tone or code, press ENTER to accept.
+   
+\307
+   ENCODE
+
+   Select the CTCSS tone or DCS code to be encoded
+   (transmitted) on this channel.  This can be done by
+   pressing the SPACE bar, then scrolling the list of 
+   tones (CTCSS) or codes (DCS) with the arrow keys.
+   Note that there are 8 non-standard CTCSS tones
+   available after 250.3 Hz.  When you have selected
+   the correct tone or code, press ENTER to accept.
+   
+\308
+   A TONE
+
+   Press SPACE bar to display the 2-Tone Select window,
+   from which you may select a 2-Tone frequency/number
+   with the Arrow Keys, pressing Enter to accept, or
+   Esc to cancel. A and B tones have to be on and off in
+   the same time. It can not activate one only.
+
+   Note: This is applicable only when 2 Tone Decoder
+   	 board is installed.
+
+\309
+   B TONE
+
+   Press SPACE bar to display the 2-Tone Select window,
+   from which you may select a 2-Tone frequency/number
+   with the Arrow Keys, pressing Enter to accept, or
+   Esc to cancel. A and B tones have to be on and off in
+   the same time. It can not activate one only.
+
+   Note: This is applicable only when 2 Tone Decoder
+   	 board is installed.
+
+\310
+   CHANNEL SCAN
+
+   Use the SPACE bar to select either Scan(a check mark
+   is indicated) or Skip(a '-') this channel when radio
+   enters into scan mode.
+
+\311
+   POWER HIGH/LOW
+
+   This column marked "H/L" indicates the default power
+   level if the A Key function is set to "Power Hi/Low"
+   and has not been pressed. This column can be set to
+   high power or low power. Toggle the selection with
+   the SPACE bar.
+
+\312
+   TIME OUT TIMER
+
+   Putting a check mark in this column will enable the
+   transmit Time Out Timer for this channel.  See: Common
+   menu to set the TOT time.  Default is 2 mins.
+
+\313
+   LOCK OUT
+
+   This column will toggle between Busy Channel Lock Out
+   (BCLO), Busy Tone Lock Out (BTLO) and none (four 
+   dashes appear).  BCLO will inhibit the transmit 
+   function if the radio detects a carrier on frequency.  
+   BTLO will allow radio to transmit only when the correct 
+   tone is decoded. This is useful when the user is 
+   operating in a shared repeater system where there may 
+   be multiple user groups on the same repeater using 
+   different tones.
+
+
+\500
+   CE20 OVERVIEW
+
+   This software is used to program configuration and
+   channel data to the Vertex VX-2000 radio.
+
+   On-line help is available by pressing F1 at any of
+   the main menu entry fields, or on any of the submenus.
+
+   CE20 Features
+
+	. Mouse support.  Please ensure that your mouse
+	  driver is installed correctly.
+	
+	. The status bar along the bottom of the screen
+	  contains information such as function of the
+	  F keys, short help explanations, action keys or
+	  ranges of data entry.
+
+	. Many of the hardware parameters are initialized
+	  to default values.  Make changes to these items
+	  only for custom applications.
